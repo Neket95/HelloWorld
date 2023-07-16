@@ -64,12 +64,48 @@ alert(num);
 
 let age = Number(prompt("сколько вам лет?"));  
 
-// задание 9.
+// задание 9.0
+
+const user1 = {
+    name: 'Nikita',
+	age: 28,
+    isAdmin: true
+}
+
+// Задание 9.1 
+
+const user2 = {
+    name: 'Nikita',
+	age: 28,
+    isAdmin: true, 
+    user2.cityofresidence = true
+}
+
+// Задание 9.2
+
+const user3 = {
+    name: 'Nikita',
+	born: 1995,
+    isAdmin: true,
+    user3.cityofresidence = true
+}
+
+// Задание 9.3
+
+const user4 = {
+    name: 'Nikita',
+	born: 1995,
+    isAdmin: true, 
+    user4.cityofresidence = true,
+    delete user4[`cityofresidence`]
+}
+
+// Задание 9.4
 
 let info = prompt("Какую информацию хотите узнать о пользователе?");
 alert(info);
 
 // задание 10.
 
-let name = prompt("Введите ваше имя?");
-alert("привет,${name}!")
+let name1 = prompt("Введите ваше имя?");
+alert(`привет, ${name1}!`);
