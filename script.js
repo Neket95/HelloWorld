@@ -1,111 +1,94 @@
-// задание 1.
+// задание 1. 
 
-let a; 
-a = 10;
-alert(a); 
+let password = "пароль"         // пр. - "пароль" или "password"
+alert(password)
 
-let b;
-b = 20;
-alert(b);
+let answer = String(prompt("введите пароль"));
+    answer = answer.toLocaleLowerCase();
+
+if (answer === "пароль" || answer === "password") {
+    console.log("Пароль введен верно");
+} else {
+    console.log("Пароль введен неправильно");
+}
 
 // задание 2.
 
-let c;
-c = 2007
-alert(c)
+let c = 5;
 
-// задание 3.
+if ( c > 0 && c < 10 ) 
+    {
+    console.log("Верно");
+    } else ( c < 0 && c > 10 ) 
+    {
+    console.log("Неверно");
+}
 
-let userName = "Brandon";
-alert(userName);
+// задание 3. 
+
+let d = 112;
+let e = 89;
+
+if ( d > 100 || e < 100 ) 
+    {
+    console.log("Верно");
+    } else ( d < 100 || e > 100 )
+    {
+    console.log("Неверно");
+}
 
 // задание 4.
 
-let $a,$b;
-$a = 10;
-$b = 2;
-result1 = $a + $b;
-result2 = $a - $b;
-result3 = $a * $b;
-result4 = $a / $b;
-alert(result1);
-alert(result2);
-alert(result3);
-alert(result4);
+let a = '2';
+let b = '3';
+
+alert(+2 + +3);
 
 // задание 5.
 
-let a1,b1;
-a1 = 2;
-b1 = 5;
-result5 = a1 ** b1
-alert(result5)
 
-// задание 6.
+let monthNumber = Number(prompt("введите номер с 1 по 12 что узнать к какому сезону в году относится данный месяц"));
 
-let a2,b2;
-a2 = 9;
-b2 = 2;
-result6 = a2 % b2;
-alert(result6);
+switch (monthNumber) {
+    case monthNumber = 1:
+        console.log('1-й месяц (он же Январь) принадлежит к сезону «зима».');
+        break;
+    case monthNumber = 2:
+        console.log('2-й месяц (он же Февраль) принадлежит к сезону «зима».');
+        break;  
+    case monthNumber = 3:
+            console.log('3-й месяц (он же Март) принадлежит к сезону «весна».');
+        break;        
+    case monthNumber = 4:
+            console.log('4-й месяц (он же Апрель) принадлежит к сезону «весна».');
+        break;    
+    case monthNumber = 5:
+            console.log('5-й месяц (он же Май) принадлежит к сезону «весна».');
+        break;    
+    case monthNumber = 6:
+            console.log('6-й месяц (он же Июнь) принадлежит к сезону «лето».');
+        break;    
+    case monthNumber = 7:
+            console.log('7-й месяц (он же Июль) принадлежит к сезону «лето».');
+        break;    
+    case monthNumber = 8:
+            console.log('8-й месяц (он же Август) принадлежит к сезону «лето».');
+        break;    
+    case monthNumber = 9:
+            console.log('9-й месяц (он же Сентябрь) принадлежит к сезону «осень».');
+        break; 
+    case monthNumber = 10:
+            console.log('10-й месяц (он же Октябрь) принадлежит к сезону «осень».');
+        break;  
+    case monthNumber = 11:
+            console.log('11-й месяц (он же Ноябрь) принадлежит к сезону «осень».');
+        break;    
+    case monthNumber = 12:
+            console.log('12-й месяц (он же Декабрь) принадлежит к сезону «зима».');
+        break;    
+               
 
- // задание 7.
-
-let num = 1;                
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num ++;
-num --;
-alert(num);
-
-// задание 8.
-
-let age = Number(prompt("сколько вам лет?"));  
-
-// задание 9.0
-
-const user1 = {
-    name: 'Nikita',
-	age: 28,
-    isAdmin: true
+    default:
+        console.log("такого месяца не существует!");
+        break;
 }
-
-// Задание 9.1 
-
-const user2 = {
-    name: 'Nikita',
-	age: 28,
-    isAdmin: true, 
-    user2.cityofresidence = true
-}
-
-// Задание 9.2
-
-const user3 = {
-    name: 'Nikita',
-	born: 1995,
-    isAdmin: true,
-    user3.cityofresidence = true
-}
-
-// Задание 9.3
-
-const user4 = {
-    name: 'Nikita',
-	born: 1995,
-    isAdmin: true, 
-    user4.cityofresidence = true,
-    delete user4[`cityofresidence`]
-}
-
-// Задание 9.4
-
-let info = prompt("Какую информацию хотите узнать о пользователе?");
-alert(info);
-
-// задание 10.
-
-let name1 = prompt("Введите ваше имя?");
-alert(`привет, ${name1}!`);
