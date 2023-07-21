@@ -1,0 +1,252 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: Montserrat;
+}
+
+.cover {
+  background-image: url(img/Обложка.jpg);
+  height: 1024px;
+  width: 1440px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.top {
+  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+  background: #000915;
+}
+
+.heading {
+  display: flex;
+  width: 678px;
+  height: 125.007px;
+  flex-direction: column;
+  justify-content: center;
+  color: #FFF;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-top: 217px;
+}
+
+.text {
+  width: 481px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.go__button {
+  border-radius: 30px;
+  background: #9C0332;
+  box-sizing: border-box;
+  border-radius: 20px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 234.063px;
+  height: 48.603px;
+  flex-shrink: 0;
+}
+
+.go__button:hover {
+  background-color: purple;
+  color: white;
+  transition: 1s;
+  font-size: 24px;
+}
+
+.block {
+  height: 556px;
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: #000915;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.game1 {
+  width: 379px;
+  height: 300px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background-image: url(img/game1.png);
+  transition: border 0.2s ease-in;
+  display: flex;
+}
+
+.game1__text1 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  align-items: flex-end;
+}
+
+.game1:hover {
+  transform: scale(1.05);
+}
+
+.game2 {
+  width: 378px;
+  height: 300px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background-image: url(img/game2.png);
+  transition: border 0.2s ease-in;
+  display: flex;
+}
+
+.game2__text2 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  align-items: flex-end;
+}
+
+.game2:hover {
+  transform: scale(1.05);
+}
+
+.game3 {
+  width: 379px;
+  height: 300px;
+  border-radius: 20px;
+  background: linear-gradient(180deg, rgba(39, 1, 15, 0) 0%, #001944 100%), url(<path-to-image>), lightgray 50%/cover no-repeat;
+  background-image: url(img/game3.png);
+  transition: border 0.2s ease-in;
+  display: flex;
+}
+
+.game3__text3 {
+  color: #FFF;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  display: flex;
+  margin-left: 32px;
+  margin-bottom: 32px;
+  align-items: flex-end;
+}
+
+.game3:hover {
+  transform: scale(1.05);
+}
+
+.play {
+  width: 1440px;
+  height: 800px;
+  padding-left: 120px;
+  padding-right: 120px;
+}
+
+.header {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 584px;
+}
+
+@media (max-width: 767px) {
+  .center {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .top {
+    width: 375px;
+    height: 1956px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .cover {
+    width: 375px;
+    height: 735px;
+    background-image: url(img/Mobile.png);
+  }
+  .block {
+    width: 375px;
+    height: 1221px;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 128px;
+  }
+  .heading {
+    color: #FFF;
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    width: 343px;
+    height: 0px;
+    padding-bottom: 32px;
+    padding-top: 238px;
+  }
+  .text {
+    color: #FFF;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 22px;
+    width: 343px;
+    text-align: center;
+  }
+  .game1 {
+    width: 343px;
+    height: 300px;
+  }
+  .game2 {
+    width: 343px;
+    height: 300px;
+  }
+  .game3 {
+    width: 343px;
+    height: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */
