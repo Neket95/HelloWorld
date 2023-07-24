@@ -6,6 +6,9 @@
 
 .body {
   font-family: Montserrat;
+  overflow: auto;
+  overflow-x: hidden;
+  background: #000915;
 }
 
 .cover {
@@ -89,6 +92,7 @@
   background: #000915;
   padding-left: 120px;
   padding-right: 120px;
+  width: 1440px;
 }
 
 .game1 {
@@ -174,6 +178,8 @@
   height: 800px;
   padding-left: 120px;
   padding-right: 120px;
+  display: flex;
+  flex-direction: row;
 }
 
 .header {
@@ -181,6 +187,11 @@
   flex-direction: column;
   align-items: flex-start;
   height: 584px;
+}
+
+.palyvector {
+  width: 485px;
+  height: 333px;
 }
 
 @media (max-width: 767px) {
